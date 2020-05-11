@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00D8F38B-21B7-4DEB-93FB-6F66658C2330}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UII_Ex</RootNamespace>
+    <AssemblyName>UII_Ex</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.DirectInput, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DirectInput.4.2.0\lib\net45\SharpDX.DirectInput.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ghost.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shots.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start_screen.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A_l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cool Text - Select     your    difficulty 356881609123547.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start_screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select_dif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start_ambient.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game_start.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B_l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Da_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Db_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dc_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dd_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\De_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Df_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dg_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dh_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Di_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dj_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dk_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dl_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O_l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P_l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PB_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PC_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PO_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R_l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacman_chomp.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacman_death.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy_laser.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L_g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L_p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ms_pac.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Win.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Victory_theme.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game_over_theme.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainbow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Press_start_go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L_g1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Press_start_win.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

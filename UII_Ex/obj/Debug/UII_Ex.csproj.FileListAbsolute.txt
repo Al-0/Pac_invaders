@@ -1,0 +1,15 @@
+c:\users\valen\documents\visual studio 2012\Projects\UII_Ex\UII_Ex\bin\Debug\UII_Ex.exe.config
+c:\users\valen\documents\visual studio 2012\Projects\UII_Ex\UII_Ex\bin\Debug\UII_Ex.exe
+c:\users\valen\documents\visual studio 2012\Projects\UII_Ex\UII_Ex\bin\Debug\UII_Ex.pdb
+c:\users\valen\documents\visual studio 2012\Projects\UII_Ex\UII_Ex\bin\Debug\SharpDX.DirectInput.dll
+c:\users\valen\documents\visual studio 2012\Projects\UII_Ex\UII_Ex\bin\Debug\SharpDX.dll
+c:\users\valen\documents\visual studio 2012\Projects\UII_Ex\UII_Ex\bin\Debug\SharpDX.pdb
+c:\users\valen\documents\visual studio 2012\Projects\UII_Ex\UII_Ex\bin\Debug\SharpDX.DirectInput.pdb
+c:\users\valen\documents\visual studio 2012\Projects\UII_Ex\UII_Ex\bin\Debug\SharpDX.DirectInput.xml
+c:\users\valen\documents\visual studio 2012\Projects\UII_Ex\UII_Ex\obj\Debug\UII_Ex.csprojResolveAssemblyReference.cache
+c:\users\valen\documents\visual studio 2012\Projects\UII_Ex\UII_Ex\obj\Debug\UII_Ex.Form1.resources
+c:\users\valen\documents\visual studio 2012\Projects\UII_Ex\UII_Ex\obj\Debug\UII_Ex.Properties.Resources.resources
+c:\users\valen\documents\visual studio 2012\Projects\UII_Ex\UII_Ex\obj\Debug\UII_Ex.csproj.GenerateResource.Cache
+c:\users\valen\documents\visual studio 2012\Projects\UII_Ex\UII_Ex\obj\Debug\UII_Ex.exe
+c:\users\valen\documents\visual studio 2012\Projects\UII_Ex\UII_Ex\obj\Debug\UII_Ex.pdb
+C:\Users\valen\Documents\Visual Studio 2012\Projects\UII_Ex\UII_Ex\obj\Debug\UII_Ex.Game.resources
